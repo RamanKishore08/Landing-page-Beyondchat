@@ -1,0 +1,287 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  height: 80px;
+  background: #0b0f2f;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00d26a;
+}
+
+.build-chatbot-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.build-chatbot-btn:hover {
+  background: #0056b3;
+}
+
+/* Setup Section */
+.setup-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #0b0f2f;
+  padding: 50px 5%;
+  overflow-x: hidden;
+}
+
+.features-list {
+  flex: 1;
+  color: #fff;
+  padding-right: 5%;
+  min-width: 300px;
+}
+
+.features-list h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.features-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.features-columns ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li svg {
+  margin-right: 10px;
+  color: #00d26a;
+}
+
+.setup-box {
+  background: #1c1f3b;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.setup-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.setup-box p {
+  font-size: 1rem;
+  margin: 15px 0;
+  word-wrap: break-word;
+}
+
+.setup-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.setup-button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .setup-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 300px;
+    padding: 30px 5%;
+  }
+
+  .features-list {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .features-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .setup-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .build-chatbot-btn {
+    width: 100%;
+  }
+
+  .setup-box {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 300px;
+  }
+
+  .features-list h2 {
+    font-size: 1.8rem;
+  }
+
+  .features-list li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .setup-container {
+    padding: 20px;
+    margin-top: 300px;
+    overflow-x: auto;
+  }
+
+  .features-list h2 {
+    font-size: 1.5rem;
+  }
+
+  .setup-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .setup-button {
+    padding: 8px 16px;
+  }
+
+  .features-list li {
+    font-size: 0.9rem;
+  }
+
+  .features-columns {
+    gap: 5px;
+  }
+}
+
+/* Desktop View Adjustments */
+@media (min-width: 1024px) {
+  .brand-name {
+    font-size: 2rem; 
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; 
+  }
+
+  .build-chatbot-btn {
+    font-size: 1.2rem; 
+  }
+
+  .features-list h2 {
+    font-size: 2.5rem; 
+  }
+
+  .features-list li {
+    font-size: 1.2rem; 
+  }
+
+  .setup-box h2 {
+    font-size: 2rem; 
+  }
+
+  .setup-box p {
+    font-size: 1.2rem; 
+  }
+
+  .setup-button {
+    font-size: 1.2rem; 
+  }
+}
